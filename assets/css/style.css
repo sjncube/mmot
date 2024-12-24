@@ -938,3 +938,58 @@
         transform: scale(1);
     }
 }
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* WhatsApp Chat Button */
+  .whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1DA851; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Spacing between icon and text */
+  }
+  
+  /* Mobile-Friendly Adjustments */
+  @media (max-width: 768px) {
+    .whatsapp-button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    .whatsapp-icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
