@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Masabatha Mahlo OT</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -45,23 +52,21 @@
   </section>
 
 <section id="testimonials">
-  <h2>What Our Clients Say</h2>
+  <h2>What Our Patients Say</h2>
   <div class="testimonial-slider">
-    <div class="testimonial">
+    <div class="testimonial" id="slide-1">
       <p>"Masabatha's care transformed my life. I regained my independence!"</p>
       <h4>- Boitumelo Mokone</h4>
     </div>
-    <div class="testimonial">
+    <div class="testimonial" id="slide-2">
       <p>"The therapy sessions were life-changing for my child."</p>
       <h4>- Themba Ngwenya</h4>
     </div>
-    <div class="testimonial">
+    <div class="testimonial" id="slide-3">
       <p>"Highly professional and empathetic service. I can't recommend them enough."</p>
       <h4>- Sarah Mnisi</h4>
     </div>
   </div>
-
-  
 </section>
 
 <footer>
@@ -102,5 +107,30 @@
     </div>
   </div>
 </footer>
+<script>
+  const testimonials = document.querySelectorAll('.testimonial');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    testimonials.forEach((testimonial, i) => {
+      testimonial.classList.remove('active');
+      if (i === index) {
+        testimonial.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % testimonials.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize the slider
+  showSlide(currentSlide);
+
+  // Change slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+
     </body>
 </html>
