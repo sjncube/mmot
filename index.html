@@ -22,14 +22,15 @@
           <h1>Masabatha Mahlo Occupational Therapy</h1>
         </div>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </nav>
+          
       </header>
           
   <section id="hero">
@@ -131,6 +132,21 @@
   // Change slide every 5 seconds
   setInterval(nextSlide, 5000);
 </script>
-
-    </body>
+<script>
+    // Redirect clean URLs to corresponding .html files for GitHub Pages
+    var path = window.location.pathname;
+  
+    // If the path ends with / or no .html, append the correct .html file
+    if (path.endsWith('/') || !path.includes('.html')) {
+      // Handle special case for root directory ("/")
+      if (path === '/') {
+        window.location.replace('/index.html');
+      } else {
+        // Redirect to the corresponding .html file
+        window.location.replace(path + '.html');
+      }
+    }
+</script>
+  
+</body>
 </html>
