@@ -1,0 +1,12 @@
+# Robots.txt file for masabathaot.co.za
+# This allows all search engines to crawl all pages of the site
+
+User-agent: *
+Disallow:
+
+# Block specific private files or directories (if applicable)
+Disallow: /admin/
+Disallow: /temp/
+
+# Sitemap URL
+Sitemap: https://masabathaot.co.za/sitemap.xml

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://masabathaot.co.za/</loc>
+    <lastmod>2025-01-02</lastmod>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://masabathaot.co.za/about.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://masabathaot.co.za/services.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://masabathaot.co.za/blog.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <priority>0.70</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://masabathaot.co.za/contact.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <priority>0.96</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
