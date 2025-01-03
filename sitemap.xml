@@ -10,7 +10,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://masabathaot.co.za/about.html</loc>
+    <loc>https://masabathaot.co.za/about</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
@@ -18,7 +18,7 @@
 
   <!-- Services Page -->
   <url>
-    <loc>https://masabathaot.co.za/services.html</loc>
+    <loc>https://masabathaot.co.za/services</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
@@ -26,7 +26,7 @@
 
   <!-- Blog Page -->
   <url>
-    <loc>https://masabathaot.co.za/blog.html</loc>
+    <loc>https://masabathaot.co.za/blog</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.70</priority>
     <changefreq>weekly</changefreq>
@@ -34,7 +34,7 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://masabathaot.co.za/contact.html</loc>
+    <loc>https://masabathaot.co.za/contact</loc>
     <lastmod>2025-01-02</lastmod>
     <priority>0.96</priority>
     <changefreq>weekly</changefreq>

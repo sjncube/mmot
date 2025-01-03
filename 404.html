@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5;url=/" />
+    <script>
+        // Get the current path
+        var path = window.location.pathname;
+
+        // Check if the path does not already end with ".html"
+        if (path && !path.endsWith(".html")) {
+            // Extract the last part of the path (e.g., "about" from "/about/")
+            var page = path.split("/").filter(Boolean).pop();
+
+            // Redirect to the corresponding .html file, if a page name exists
+            if (page) {
+                window.location.href = page + ".html";
+            } else {
+                // Redirect to the home page if no valid path is provided
+                window.location.href = "/";
+            }
+        }
+    </script>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+</body>
+</html>
